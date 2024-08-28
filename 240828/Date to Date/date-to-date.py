@@ -2,9 +2,9 @@ num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 a,b,c,d=map(int,input().split())
 time1=b
 time2=d
-for i in range(a-1):
+for i in range(0,a-1):
     time1+=num_of_days[i]
-for i in range(c-1):
+for i in range(0,c-1):
     time2+=num_of_days[i]
 fin=time2-time1
 if fin==0:
