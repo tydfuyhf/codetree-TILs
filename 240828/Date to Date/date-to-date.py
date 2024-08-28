@@ -6,4 +6,8 @@ for i in range(a-1):
     time1+=num_of_days[i]
 for i in range(c-1):
     time2+=num_of_days[i]
-print(time2-time1)
+fin=time2-time1
+if fin==0:
+    print(1)
+else:
+    print(fin)
