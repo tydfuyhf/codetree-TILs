@@ -10,5 +10,5 @@ for i in range(1,m2):
 if time2-time1>0:
     differ=1+(time2-time1)%7
 else:
-    differ=1-abs(time2-time1)%7
+    differ=1-(abs(time2-time1))%7
 print(day[differ])
