@@ -1,7 +1,7 @@
 n=int(input())
 x=[]
-if n==0:
-    print(0)    
+if n==0 or n==1:
+    print(n)    
 else:    
     while True:
         x.append(n%2)
