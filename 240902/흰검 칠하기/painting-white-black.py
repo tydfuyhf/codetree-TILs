@@ -14,7 +14,7 @@ for x,d in collect:
     # black
     if d=="R":
         for i in range(loc,loc+x):
-            if cnt[i]<2:
+            if cnt[i]==0 or cnt[i]==1:
                 color[i]="B"
                 cnt[i]+=1
             else:
@@ -23,7 +23,7 @@ for x,d in collect:
     #white
     else:
         for i in range(loc-x,loc):
-            if cnt[i]<2:
+            if cnt[i]==0 or cnt[i]==1:
                 color[i]="W"
             else:
                 color[i]="G"
