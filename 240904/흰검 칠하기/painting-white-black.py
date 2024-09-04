@@ -17,7 +17,7 @@ for x,d in collect:
         for i in range(loc,loc+x):
             if cntB[i]>=1 and cntW[i]>=2:
                 color[i]="G"
-                cntB+=1
+                cntB[i]+=1
             else:
                 color[i]="B"
                 cntB[i]+=1
