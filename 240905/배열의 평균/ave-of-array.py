@@ -8,14 +8,14 @@ for i in total:
     for w in i:
         width+=w
     widthsum+=width
-    print(width/4,end=" ")
+    print(round(width/4,1),end=" ")
 print()
 for c in range(4):
     height=0
     for v in range(2):
         height+=total[v][c]
     heightsum+=height
-    print(height/2,end=" ")
+    print(round(height/2,1),end=" ")
 print()
 totalsum=(heightsum+widthsum)/16
-print(totalsum)
+print(round(totalsum,1))
